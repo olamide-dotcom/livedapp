@@ -245,7 +245,7 @@ header {
 .contentBlock .mainContent {
     background-color: #1b1c1e;
     border-radius: 12px;
-    margin-top: 20px;
+    margin-top: 100%;
     width: 100%;
     padding: 10px 20px;
 }
